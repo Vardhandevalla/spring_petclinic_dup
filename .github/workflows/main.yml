@@ -37,3 +37,5 @@ jobs:
           sudo apt update
           sudo apt install maven
           mvn -version
+          mvn 'clean'
+          mvn 'package'
