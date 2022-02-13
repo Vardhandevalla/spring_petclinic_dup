@@ -34,6 +34,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ls -a
-          maven 'clean'
-          maven 'compile'
+          sudo apt update
+          sudo apt install maven
+          mvn -version
