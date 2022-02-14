@@ -23,6 +23,6 @@ jobs:
         with:
           source_repo: "https://Vardhandevalla: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@github.com/Vardhandevalla/spring_petclinic_dup.git"
           source_branch: "main"
-          destination_repo: "https://VardhanDeva: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@github.com/VardhanDeva/sync_test.git"
+          destination_repo: "https://VardhanDeva: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@github.com/VardhanDeva/sync_test.git"
           destination_branch: "main"
      
