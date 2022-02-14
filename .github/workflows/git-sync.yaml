@@ -25,8 +25,8 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://Vardhandevalla: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4@github.com/Vardhandevalla/spring_petclinic_dup.git"
+          source_repo: Vardhandevalla/spring_petclinic_dup.git"
           source_branch: "main"
-          destination_repo: "https://Vardhandevalla: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@github.com/Vardhandevalla/git_sync_test.git"
+          destination_repo: Vardhandevalla/git_sync_test.git"
           destination_branch: "main"
      
