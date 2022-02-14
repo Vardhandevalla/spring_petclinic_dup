@@ -1,0 +1,26 @@
+name: Sync the repo of vardhandevalla to the ashokvardhan githun accounts
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "Vardhandevalla/spring_petclinic_dup"
+          source_branch: "main"
+          destination_repo: "VardhanDeva/sync_test"
+          destination_branch: "main"
+     
