@@ -18,11 +18,13 @@ jobs:
   git-sync:
     runs-on: ubuntu-latest
     steps:
+      - name: adding the remote repo
+        run: git remote add origin https://github.com/VardhanDeva/sync_test.git
       - name: git-sync
         uses: wei/git-sync@v3
         with:
           source_repo: "https://Vardhandevalla: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@github.com/Vardhandevalla/spring_petclinic_dup.git"
           source_branch: "main"
-          destination_repo: "https://github.com/VardhanDeva/sync_test.git"
+          destination_repo: "https://VardhanDeva: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@github.com/VardhanDeva/sync_test.git"
           destination_branch: "main"
      
