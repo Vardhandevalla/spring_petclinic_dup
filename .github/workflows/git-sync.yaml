@@ -1,3 +1,5 @@
+# This is a basic workflow to help you get started with Actions
+
 name: Sync the repo of vardhandevalla to the ashokvardhan githun accounts
 
 # Controls when the workflow will run
@@ -19,8 +21,8 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://github.com/Vardhandevalla/spring_petclinic_dup.git"
+          source_repo: "https://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@github.com/Vardhandevalla/spring_petclinic_dup.git"
           source_branch: "main"
-          destination_repo: "https://github.com/VardhanDeva/sync_test.git"
+          destination_repo: "https://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/VardhanDeva/sync_test.git"
           destination_branch: "main"
      
