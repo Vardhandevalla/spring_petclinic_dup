@@ -19,7 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: adding the remote repo
-        run: git remote add origin https://github.com/VardhanDeva/sync_test.git
+        run: |
+          git init
+          git remote add origin https://github.com/VardhanDeva/sync_test.git
       - name: git-sync
         uses: wei/git-sync@v3
         with:
