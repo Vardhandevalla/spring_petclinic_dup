@@ -1,0 +1,13 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local
+
+    tasks:
+
+      - name: "check whether the env varible is defined or not"
+        fail: msg="the connection string is defined"
+        when: lookup('env', 'azure_storage_container') == ''
+
+      - name: "check ansible when statement"
+        shell: echo "$azure_storage_container is defined " > ip.txt
