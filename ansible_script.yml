@@ -1,0 +1,10 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local
+
+    tasks:
+
+      - name: "check ansible when statement"
+        shell: echo "$azure_storage_container is defined"
+        when: lookup('env', 'azure_storage_container') != ''
